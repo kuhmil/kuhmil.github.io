@@ -1,0 +1,28 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+/*About Me Section*/
+
+.about
+{
+	padding-top: 100px;
+	padding-bottom: 50px;
+	padding-left: 100px;
+
+}
+
+.nav-bar
+{
+	/*add style for nav bar*/
+	background-color: #111;
+}
+
+.navbar
+{
+	background-color: #001;
+
+}
