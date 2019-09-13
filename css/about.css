@@ -1,3 +1,20 @@
-.back {
-	background-image: url("night.png");
+body{
+  background-image: url("../images/coffee1.jpg");
 }
+/*.grid-container:after {
+  content: "";
+  display: table;
+  clear: both;
+
+
+}
+.grid-item {
+  float: left;
+  width: 50%;
+
+}
+
+.grid-item img {
+    width: 100%;
+    object-fit: cover;
+}*/

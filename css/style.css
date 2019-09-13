@@ -4,7 +4,14 @@
 	box-sizing: border-box;
 }
 body {
-	/*background-image: url("night.png")*/;
+	
+	background-image: url("../images/coffee1.jpg");
+	background-size: cover;
+
+	/*
+	background-image: url("../images/hph.JPG");
+	background-color: #130d0a;
+	background-color: #F5F5F5;*/
 }
 
 nav{
@@ -13,13 +20,16 @@ nav{
 	align-items: center;
 	min-height: 10vh;
 	font-family: 'Quicksand', sans-serif;
-	background-color: rgb(220,220,220);
-	/*background-color: rgb(193, 187, 220)*/
+	background-color: #180D01;
+	/*
+	'Quicksand', background-color: rgb(193, 187, 220)
+	background-color: #000000;
+	Times New Roman*/
 
 }
 
 .logo{
-	color: #9979b8;
+	color: #F0FFFF;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-size: 20px;
@@ -28,7 +38,7 @@ nav{
 .nav-links{
 	display: flex;
 	justify-content: space-around;
-	width: 35%;
+	width: 40%;
 }
 
 .nav-links li{
@@ -36,7 +46,7 @@ nav{
 }
 
 .nav-links a{
-	color: #9979b8;
+	color: #F0FFFF;
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-weight: bold;
