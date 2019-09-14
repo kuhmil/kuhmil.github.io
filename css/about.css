@@ -1,10 +1,162 @@
 body{
-  background-image: url("../images/coffee1.jpg");
+  background-color: #FFFAFA;
+  padding-bottom: 150px;
+  font-family: 'Quicksand', sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:bold;
+	line-height:normal;
+	text-align: center;
+	margin-top:40px;
+  	margin-bottom:15px; 
+  	font-weight: bold;
+}
+
+hr {
+	height:1px; 
+	border:none; 
+	color:#000; 
+	background-color:#000; 
+	width:30%; 
+	text-align:center; 
+	margin: 0 auto;
+	margin-top:40px;
+  	margin-bottom:40px; 
+
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom:10px;
+}
+
+
+p {
+  width: 50%;   /* == 400px * .5 = 200px */
+  height: 10%;  /* == 160px * .25 = 40px */
+   /* == 400px * .05 = 20px */
+  padding: 1%;  /* == 400px * .05 = 20px */
+}
+
+#wrapper {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  font-weight: bold;
+  transition: .4s;
+  margin-right: 100px;
+  margin-left: 100px;
+   /*background-image: url("../images/coffee1.jpg");
+  background-size: 100%; /* To fill the dimensions of container (button), or 
+  order: solid 2px #668ad8;*/
+  background-size: 200px;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+.btn1{
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  font-weight: bold;
+  transition: .4s;
+  margin-right: 100px;
+  margin-left: 100px;
+   /*background-image: url("../images/coffee1.jpg");
+  background-size: 100%; /* To fill the dimensions of container (button), or 
+  order: solid 2px #668ad8;*/
+  border: solid 2px #668ad8;
+
+}
+
+.dot {
+  height: 120px;
+  width: 120px;
+  background-image: url("../images/me1.jpg");
+  border-radius: 50%;
+  display: inline-block;
+  background-size: cover;
+}
+
+.usa {
+	background-image: url("../images/button/america.jpg");
+}
+
+.asia {
+	background-image: url("../images/button/water.JPG");
+}
+
+.africa {
+	background-image: url("../images/button/morocco1.jpg");
+}
+
+.europe {
+	background-image: url("../images/button/church.jpg");
+	background-size: 100%;
+}
+
+
+.project1 {
+	background-image: url("../images/projects_button/table.jpg");
+	background-size: 100%;
+}
+
+.project2 {
+	background-image: url("../images/ice.jpg");
+}
+
+.project3 {
+	background-color: #006400;
+}
+
+.hobby1 {
+	background-image: url("../images/hobbies_button/jewelry1.jpg");
+}
+
+.hobby2 {
+	background-image: url("../images/hobbies_button/food.jpg");
+}
+
+.hobby3 {
+	background-image: url("../images/hobbies_button/music.jpeg");
+}
+
+
 /*.grid-container:after {
   content: "";
   display: table;
   clear: both;
+  background: #b3e1ff;
 
 
 }
