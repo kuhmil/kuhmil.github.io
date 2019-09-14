@@ -3,16 +3,18 @@
 	padding: 0px;
 	box-sizing: border-box;
 }
-body {
+body.welcome {
 	
 	/*background-image: url("../images/coffee1.jpg");
 	background-size: cover;
 	background-color: #FFFAFA;
 	background-image: url("../images/coffee1.jpg");
-	background-color: #FFFAFA;*/
+	background-color: #FFFAFA;
+	background-size: cover;*/
   	background-repeat: no-repeat;
   	background-size: cover;
-  	background-image: url("../images/trees.JPG")
+  	
+  	background-image: url("../images/coffee1.jpg")
 
 	/*
 	background-image: url("../images/hph.JPG");
