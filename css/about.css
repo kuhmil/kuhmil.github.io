@@ -1,3 +1,5 @@
+/*About, travel, contact*/
+
 *{
   margin: 0px;
   padding: 0px;
@@ -45,10 +47,24 @@ section {
   margin-bottom:10px;
 }
 
+section.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin-bottom:10px;
+}
 
 p {
   width: 50%;   /* == 400px * .5 = 200px */
   height: 10%;  /* == 160px * .25 = 40px */
+   /* == 400px * .05 = 20px */
+  padding: 1%;  /* == 400px * .05 = 20px */
+}
+
+p.contact-p {
+  width: 50%;   /* == 400px * .5 = 200px */
+  height: 5%;  /* == 160px * .25 = 40px */
    /* == 400px * .05 = 20px */
   padding: 1%;  /* == 400px * .05 = 20px */
 }
@@ -293,3 +309,26 @@ p {
   align-items: center;
   justify-content: center;
 }
+
+.grid-project {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-project > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 { grid-area: 6 / 1 / 2 / 2; }
+.item2 { grid-area: 2 / 1 / 2 / 2;}
+.item3 { grid-area: 1 / 2 / 3 / 4;}
+.item4 { grid-area: 2 / 2 / 3 / 4; }
+.item5 { grid-area: 3 / 2 / 3 / 4;}
+.item6 { grid-area: 4 / 2 / 3 / 4; }
+
