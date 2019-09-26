@@ -10,6 +10,7 @@ body{
   background-color: #FFFAFA;
   padding-bottom: 150px;
   font-family: 'Quicksand', sans-serif;
+  overflow-x: hidden;
 }
 
 h4{
@@ -235,16 +236,16 @@ p.contact-list {
 
 
 .project1 {
-	background-image: url("../images/projects_button/table.jpg");
+	background-image: url("../images/projects_button/table1.png");
 	background-size: 100%;
 }
 
 .project2 {
-	background-image: url("../images/ice.jpg");
+	background-image: url("../images/projects_button/lamp1.png");
 }
 
 .project3 {
-	background-color: #006400;
+	background-image: url("../images/projects_button/xmas-tree.png");
 }
 
 .hobby1 {
@@ -427,8 +428,8 @@ p.square-p {
   justify-content: center;
   align-content: center;
   /*grid-gap: 1rem;*/
-  grid-template-columns: repeat(2, 25vw);
-  grid-template-rows: repeat(3, 25vw);
+  grid-template-columns: repeat(2, 30vw);
+  grid-template-rows: repeat(3, 30vw);
 }
 
 
@@ -475,4 +476,6 @@ p.square-p {
     background-image: url("../images/travel/portland1.jpg");
     background-size: cover;
   }*/
+
+
 
