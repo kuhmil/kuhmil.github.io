@@ -249,7 +249,8 @@ p.contact-list {
 }
 
 .hobby1 {
-	background-image: url("../images/hobbies_button/jewelry1.jpg");
+	background-image: url("../images/hobbies_button/bead1.png");
+  background-size: 100%;
 }
 
 .hobby2 {
@@ -257,7 +258,7 @@ p.contact-list {
 }
 
 .hobby3 {
-	background-image: url("../images/hobbies_button/music.jpeg");
+	background-color: black;
 }
 
 .square{
@@ -437,7 +438,7 @@ p.square-p {
   grid-row: 1;
   grid-column: 1;
   background-image: url("../images/projects/falcon2.png");
-  background-size: 80%;
+  background-size: 90%;
   border-radius: 8px;
 }
 
