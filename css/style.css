@@ -119,7 +119,7 @@ section.resume {
 /*Images Corners */
 
 .left {
-    float:left;
+      float:left;
 }
 .right {
     float:right;
@@ -135,6 +135,18 @@ section.resume {
 .image-centre {
   margin-left: auto;
   margin-right: auto;
+}
+
+/*"Buttons**/
+.download {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left:50px;
+  margin-right:50px;
 }
 
 /*Quotes*/
@@ -241,7 +253,7 @@ nav{
 
 /*Card Menu*/
 .container-title {
-    max-width: 3200px;
+    max-width: 100%;
     margin: auto;
     padding: 295px;
     display: flex;
@@ -250,12 +262,22 @@ nav{
 }
 
 .container {
-    max-width: 3200px;
+    max-width: 100%;
     margin: auto;
     padding: 120px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap; /* Required to position the posts one below the other on smaller devices */
+}
+
+.container-resume {
+    max-width: 100%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Required to position the posts one below the other on smaller devices */
+    background-color: #62bcfa;
 }
 
 
@@ -542,18 +564,15 @@ nav{
 
 
 .square-outline{
-    width: 200px;
-    height: 200px;
+  position: relative;
+  width: 150%;
+  height: 200px;
+  margin-left: 50%;
+  outline: 5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.square-outline {
-    margin-right: 10%;
-    outline: 5px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 
 /*Gradient*/
