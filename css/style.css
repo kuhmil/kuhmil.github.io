@@ -1,79 +1,227 @@
-/*Welcome page, Resume and Contact*/
-
 *{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-}
-body.welcome {
-	
-	/*background-image: url("../images/coffee1.jpg");
-	background-size: cover;
-	background-color: #FFFAFA;
-	background-image: url("../images/coffee1.jpg");
-	background-color: #FFFAFA;
-	background-size: cover;*/
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	
-  	background-image: url("../images/coffee1.jpg")
-
-	/*
-	background-image: url("../images/hph.JPG");
-	background-color: #130d0a;
-	background-color: #F5F5F5;*/
-}
-
-body.background-resume {
-	/*background-image: url("../images/coffee1.jpg");
-  background-color: #180D01;*/
-  background-image: url("../images/ice.jpg");
-	background-position: left 60%;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-
-
+	font-family: 'Quicksand', sans-serif;
 
 }
-.resume {
-  display: block;
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  align-items: center;
+}
+
+/*Text*/
+
+h1 {
+  font-weight:bold;
+  line-height:normal;
+  text-align: center;
+  margin-top:40px;
+  margin-bottom:15px;
+  font-weight: bold;
+}
+
+.square-header {
+  font-weight:bold;
+  font-weight: bold;
+  color: white;
+
+}
+
+.square-about {
+  margin-top: 10%;
+  margin-left: -49%;
+  font-weight:bold;
+  font-weight: bold;
+  color: white;
+  font-size:55px;
+}
+
+.square-me {
+  font-weight:bold;
+  font-weight: bold;
+  color: white;
+  font-size: 60px;
+  margin-top: 10%;
+  margin-right: -103%;
+}
+
+
+h4 {
+  font-weight:bold;
+  line-height: 1.6;
+  text-align: center;
+  margin-top:40px;
+  margin-bottom:15px;
+  color: white;
+  font-family:'Roboto';
+  font-weight: 3000;
+}
+
+hr {
+	height:1px;
+	border:none;
+	color:#000;
+	background-color:#000;
+	width:60%;
+	text-align:center;
+	margin: 0 auto;
+}
+
+/*Sections*/
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom:10px;
+}
+
+section.left {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  padding: 30px;
+  margin-bottom:10px;
+}
+
+section.right {
+    width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding: 10px;
+    margin-bottom:10px;
+}
+
+section.contact {
+  margin-top: 5px;
+}
+
+section.resume {
+    width: 100%;
+    height: 20%;
+    margin: auto;
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    background-color: #62bcfa;
+    flex-wrap: wrap; /* Required to position the posts one below the other on smaller devices */
+}
+
+/*Images Corners */
+
+.left {
+    float:left;
+}
+.right {
+    float:right;
+}
+.image-left {
+    float:left;
+}
+
+.image-right {
+    float:right;
+}
+
+.image-centre {
   margin-left: auto;
   margin-right: auto;
-  height: 80%;
-  width: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  position: left;
+}
 
- }
+/*Quotes*/
+.component{
+  width: 1500px;
+  margin:0 auto;
+  padding: 3rem;
+}
 
+.component blockquote.quote {
+    position: relative;
+    text-align: center;
+    padding: 1rem 1.2rem;
+    width: 80%;  /* create space for the quotes */
+    color: #484748;
+
+}
+.component blockquote.EN {
+    background:
+    linear-gradient(to right, #FC4445 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, #FC4445 4px, transparent 4px) 100% 0,
+    linear-gradient(to bottom, #FC4445 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, #FC4445 4px, transparent 4px) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+.component blockquote.DE {
+    background:
+    linear-gradient(to right, #FC4445 4px, transparent 4px) 0% 0%,
+    linear-gradient(to bottom, #FC4445 4px, transparent 4px) 0% 0%,
+    linear-gradient(to left, #FC4445 4px, transparent 4px) 100% 100%,
+    linear-gradient(to top, #FC4445 4px, transparent 4px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+
+
+/*Name*/
+ /* Google chrome */
+@-webkit-keyframes svg-text-anim {
+   40% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+    60% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+
+}
+    /* Most browsers */
+@keyframes svg-text-anim {
+   40% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+    60% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+
+}
+/*Navigation Bar*/
 nav{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	min-height: 10vh;
-	font-family: 'Quicksand', sans-serif;
+	min-height: 25vh;
 	background-color: #000000;
-	/*
-	'Quicksand', background-color: rgb(193, 187, 220)
-	background-color: #000000;
-	Times New Roman*/
 
-}
-
-.logo{
-	color: #FFFAFA;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-size: 20px;
 }
 
 .nav-links{
 	display: flex;
 	justify-content: space-around;
-	width: 40%;
+	width: 60%;
 }
-
 .nav-links li{
 	list-style: none;
 }
@@ -84,61 +232,519 @@ nav{
 	letter-spacing: 3px;
 	font-weight: bold;
 }
-.burger{
-	display: none;
-	cursor: pointer;
-}
-.burger div{
-	width: 25px;
-	height: 3px;
-	background-color: #9979b8;
-	margin: 5px;
 
-}
-@media screen and (max-width: 1024px){
-	.nav-links{
-		width: 60%;
-	}
-
-}
-
-@media screen and (max-width: 768px){
-	body{
-		overflow-x: hidden;
-	}
-	.nav-links{
-		position: absolute;
-		right: 0px;
-		height: 92vh;
-		top: 10vh;
-		background-color: rgb(220,220,220);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		transform: translateX(100%);
-		transition: transform 0.5s ease-in;
-	}
-	.nav-link li{
-		opacity: 0;
-	}
-	.burger{
-		display: block;
-	}
-}
-
-.nav-active{
-	transform: translateX(0%);
-}
-
-@keyframes navLinkFade{
-	from{
-		opacity: 0;
-		transform: translateX(50px);
-	}
-	to{
-		opacity: 1;
-		transform: translateX(0px);
-	}
+/*Paper Plane Animation*/
+.box{
+    background-color: #CAFAFE;
 }
 
 
+/*Card Menu*/
+.container-title {
+    max-width: 3200px;
+    margin: auto;
+    padding: 295px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Required to position the posts one below the other on smaller devices */
+}
+
+.container {
+    max-width: 3200px;
+    margin: auto;
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Required to position the posts one below the other on smaller devices */
+}
+
+
+
+.post-wrap {
+    min-width: 300px;
+    max-width: 380px;
+    height: 420px;
+    perspective: 1000px;
+    flex: 1;
+    margin: 0 15px 30px;
+}
+.post {
+    position: relative; /* Required to absolutely position the faces */
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.post-front, .post-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.post-back {
+    transform: rotateY(180deg);
+}
+.post-wrap:hover .post {
+    transform: rotateY(180deg);
+}
+.post-img {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.post-info {
+    padding: 20px 30px 30px;
+    color: white;
+}
+.post-info span {
+    font-size: 0.8rem;
+    color: #808080;
+}
+.post-info h2{
+    font-weight: bold;
+    font-size: 3.4rem;
+
+}
+.post-back {
+    background-color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* To push the read more button to bottom */
+    align-items: flex-start; /* To position the read more button at the left */
+}
+.post-back h2{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+.post-back p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+.post-back a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #5678ba;
+    padding: 10px 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/*Back Contact Card*/
+.dot-contact-email {
+  height: 40px;
+  width: 40px;
+  /*padding-left:0; */
+  background-image: url("../images/contact/email.png");
+  border-radius: 50%;
+  position: relative;
+  left: 16.5%;
+  background-size: cover;
+}
+
+.dot-contact-phone {
+  height: 40px;
+  width: 40px;
+  /*padding-left:0; */
+  background-image: url("../images/contact/phone.png");
+  border-radius: 50%;
+  position: relative;
+  left: 16.5%;
+  background-size: cover;
+}
+
+.dot-contact-linklden {
+  height: 40px;
+  width: 40px;
+  /*padding-left:0; */
+  background-image: url("../images/contact/in.png");
+  border-radius: 50%;
+  position: relative;
+  left: 16.5%;
+  background-size: cover;
+}
+
+.dot-contact-location {
+  height: 50px;
+  width: 50px;
+  /*padding-left:0; */
+  background-image: url("../images/contact/location.png");
+  border-radius: 50%;
+  position: relative;
+  left: 16.5%;
+  background-size: cover;
+}
+
+/*Skill Bar*/
+::selection{
+  color: #fff;
+  background: #6665ee;
+}
+.skill-bars{
+  padding: 25px 30px;
+  width: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #6665ee;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.html span{
+  width: 90%;
+}
+.bar .progress-line.css span{
+  width: 60%;
+}
+.bar .progress-line.jquery span{
+  width: 85%;
+}
+.bar .progress-line.python span{
+  width: 50%;
+}
+.bar .progress-line.mysql span{
+  width: 75%;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.html span::after{
+  content: "90%";
+}
+.progress-line.css span::after{
+  content: "60%";
+}
+.progress-line.jquery span::after{
+  content: "85%";
+}
+.progress-line.python span::after{
+  content: "50%";
+}
+.progress-line.mysql span::after{
+  content: "75%";
+}
+
+/*Menu Option Squares*/
+.square {
+  position: relative;
+  width: 20%;
+  /*background-color: red;*/
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.square-inner {
+  border: 5px solid white;
+  position: absolute;
+   width: 200px;
+   height: 200px;
+   top: 50%;
+   left: 45%;
+}
+
+.square-inner:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+
+.square-outline{
+    width: 200px;
+    height: 200px;
+}
+
+.square-outline {
+    margin-right: 10%;
+    outline: 5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*Gradient*/
+.square-gradient-ab{
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    -webkit-appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+    font-weight: 600;
+    font-size: 14px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 0px;
+    box-shadow: 0 0 0 white, 0 0 0 white;
+}
+
+
+.square-gradient-ab{
+    box-shadow: -15px 0 70px -15px #FC4445, 15px 0 70px -15px #ffc500;
+}
+
+.square-gradient-ab .button-circle1{
+    transform: translate(-15px, -15px) scale(0);
+}
+
+.square-gradient-ab .button-circle2{
+    transform: translate(-15px, 15px) scale(0);
+}
+
+.square-gradient-ab .button-circle3{
+    transform: translate(15px, -15px) scale(0);
+}
+
+.square-gradient-ab .button-circle4{
+    transform: translate(15px, 15px) scale(0);
+}
+
+.square-gradient-ab .button-circle{
+    box-shadow: none;
+}
+
+.square-gradient-rs{
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    -webkit-appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+    font-weight: 600;
+    font-size: 14px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 0px;
+    box-shadow: 0 0 0 white, 0 0 0 white;
+}
+
+.square-gradient-rs{
+    box-shadow: -15px 0 70px -15px #55BCC9, 15px 0 70px -15px #CAFAFE;
+}
+
+.square-gradient-rs .button-circle1{
+    transform: translate(-15px, -15px) scale(0);
+}
+
+.square-gradient-rs .button-circle2{
+    transform: translate(-15px, 15px) scale(0);
+}
+
+.square-gradient-rs .button-circle3{
+    transform: translate(15px, -15px) scale(0);
+}
+
+.square-gradient-rs .button-circle4{
+    transform: translate(15px, 15px) scale(0);
+}
+
+.square-gradient-rs .button-circle{
+    box-shadow: none;
+}
+
+/*Terminal Animation*/
+.typewriter h3 {
+  color: #000000;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+.static-typewriter h3 {
+  color: #000000;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+// Window
+.window-container {
+  width: 1500px;
+  height: 1500px;
+  border: 1px solid #bbb;
+  border-radius: 7px;
+  box-shadow: 0 22px 70px 4px rgba(0, 0, 0, 0.56);
+  background: rgb(233, 233, 233);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.window-controls {
+  display: flex;
+  padding: 5px;
+  background: linear-gradient(rgb(226, 224, 226), rgb(199, 198, 200));
+}
+
+.window-controls-btn {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.close-btn {
+  background: rgb(227, 69, 69);
+}
+
+.minimize-btn {
+  background: rgb(224, 178, 40);
+}
+
+.expand-btn {
+  background: rgb(0, 216, 67);
+}
+
+.window-content {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 95%;
+  background: #000;
+  overflow-y: scroll;
+}
+
+.line {
+  color: #fff;
+  margin: 0;
+  padding: 3px 5px;;
+}

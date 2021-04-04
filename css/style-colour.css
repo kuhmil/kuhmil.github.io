@@ -1,0 +1,138 @@
+@import "bourbon";
+
+@mixin no-touchy {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+* { @include box-sizing(border-box); }
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.card-table {
+  background: burlywood;
+  width: 100%;
+  padding: 1rem 0.5rem 0.5rem 1rem;
+  margin: 0 auto;
+  list-style: none;
+  overflow: hidden;
+  text-align: center;
+  height: 300px
+}
+
+.card {
+  width: 200px;
+  height: 125px;
+  border-radius: 5px;
+  background: #fff;
+  display: inline-block;
+  margin: 0 0.5rem 0.5rem 0;
+  border: 1px solid #ddd;
+  @include transform(translateY(-125%));
+  transition: transform .5s cubic-bezier(.25,0,.28,1.43);
+}
+
+.card:nth-child(1) {
+  @include transition-delay(0);
+}
+
+.card:nth-child(2) {
+  @include transition-delay(.30s);
+}
+
+.card:nth-child(3) {
+  @include transition-delay(.45s);
+}
+
+.card:nth-child(4) {
+  @include transition-delay(.15s);
+}
+
+.load-cards {
+  width: 100%;
+  float: left;
+  padding: 1rem;
+  cursor: pointer;
+  @include no-touchy;
+  &:hover {
+    background: #ddd;
+  }
+}
+
+.animated {
+  .card {
+    @include transform(translateY(0));
+    transition: transform .5s cubic-bezier(.25,-1.42,.28,1.43);
+  }
+  .card:nth-child(1) {
+    @include transition-delay(0);
+  }
+
+  .card:nth-child(2) {
+    @include transition-delay(.15s);
+  }
+
+  .card:nth-child(3) {
+    @include transition-delay(.30s);
+  }
+
+  .card:nth-child(4) {
+    @include transition-delay(.45s);
+  }
+}
+
+/*$t: 1s;
+$d: 0.08em;
+$n: 3;
+$e: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+$front: black;
+$back: lightblue;
+html{
+	background: white;
+}
+
+.popout{
+	font-family: Futura, sans-serif;
+	font-weight: 900;
+	font-size: 80px;
+	padding: 80px;
+
+	@keyframes ani{
+		0%{
+			transform: translate3d(0,0,0);
+			text-shadow: 0em 0em 0 $back;
+			color: $front;
+		}
+		30%{
+			transform: translate3d(0,0,0);
+			text-shadow: 0em 0em 0 $back;
+			color: $front;
+		}
+		70%{
+			transform: translate3d($d,-$d,0);
+			text-shadow: -$d $d $back;
+			color: $front;
+		}
+		100%{
+			transform: translate3d($d,-$d,0);
+			text-shadow: -$d $d $back;
+			color: $front;
+		}
+	}
+	span{
+		position: relative;
+		display: inline-block;
+		animation: ani $t infinite alternate $e;
+		@for $i from 1 through $n{
+			&:nth-last-child(#{$i}n){ animation-delay: -$t*$i/$n/2;}
+		}
+	}
+
+}*/
