@@ -12,4 +12,4 @@ function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeCo
                 path.style["animation-delay"] = `${i * delay}s`;
             }
         }
- setTextAnimation(0.5,8,1,'linear','#ffffff',true);
+ setTextAnimation(0.5,8,2.5,'linear','#ffffff',false);

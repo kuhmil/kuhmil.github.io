@@ -149,6 +149,17 @@ section.resume {
   margin-right:50px;
 }
 
+.download-card {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 12%;
+
+}
+
 /*Quotes*/
 .component{
   width: 1500px;
@@ -254,9 +265,9 @@ nav{
 /*Card Menu*/
 .container-title {
     max-width: 100%;
-    margin: auto;
-    padding: 295px;
-    display: flex;
+    padding-top: 220px;
+    padding-bottom: 220px;
+    text-align: center;
     justify-content: center;
     flex-wrap: wrap; /* Required to position the posts one below the other on smaller devices */
 }
@@ -362,48 +373,74 @@ nav{
     border-radius: 5px;
 }
 
-/*Back Contact Card*/
+/*Contact Info Footer and Contact card*/
+.name-contact {
+  color: #3B3B3B;
+  margin-bottom: 0;
+}
+p.contact-card {
+  margin: 0.8em 0;
+}
+.info-contact {
+  position: absolute;
+  bottom: $padding;
+  left: $padding;
+  color: #3b3b3b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  bottom: 15px;
+}
+.property {
+  color: #431c5d;
+}
+
+p.contact-p {
+  list-style-position:inside;
+}
+
+section.contact {
+  text-align: center;
+  margin-top: 5px;
+}
+
+
 .dot-contact-email {
   height: 40px;
   width: 40px;
-  /*padding-left:0; */
   background-image: url("../images/contact/email.png");
   border-radius: 50%;
   position: relative;
-  left: 16.5%;
+  right: 2%;
   background-size: cover;
 }
 
 .dot-contact-phone {
   height: 40px;
   width: 40px;
-  /*padding-left:0; */
   background-image: url("../images/contact/phone.png");
   border-radius: 50%;
   position: relative;
-  left: 16.5%;
+  right: 3%;
   background-size: cover;
 }
 
 .dot-contact-linklden {
   height: 40px;
   width: 40px;
-  /*padding-left:0; */
   background-image: url("../images/contact/in.png");
   border-radius: 50%;
   position: relative;
-  left: 16.5%;
+  right: 2%;
   background-size: cover;
 }
 
 .dot-contact-location {
   height: 50px;
   width: 50px;
-  /*padding-left:0; */
   background-image: url("../images/contact/location.png");
   border-radius: 50%;
   position: relative;
-  left: 16.5%;
+  left: 1%;
   background-size: cover;
 }
 
