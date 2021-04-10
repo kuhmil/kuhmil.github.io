@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: black;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 10vh;
+	font-family: 'Quicksand', sans-serif;
+	background-color: #000000;
+	/*
+	'Quicksand', background-color: rgb(193, 187, 220)
+	background-color: #000000;
+	Times New Roman*/
+
+}
+
+
+
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+.nav-links a{
+	color: #FFFAFA;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+/*"**"*"*"*"*"*"*"*"**/
+
+.header {
+  text-align: center;
+  padding: 20%;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@-webkit-keyframes svg-text-anim {
+   40% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+    60% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+
+}
+    /* Most browsers */
+@keyframes svg-text-anim {
+   40% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+    60% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+
+}
