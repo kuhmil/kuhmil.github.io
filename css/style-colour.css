@@ -1,138 +1,105 @@
-@import "bourbon";
+/*
+  https://developer.mozilla.org/en/docs/Web/CSS/box-shadow
+  box-shadow: [inset?] [top] [left] [blur] [size] [color];
 
-@mixin no-touchy {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  Tips:
+    - We're setting all the blurs to 0 since we want a solid fill.
+    - Add the inset keyword so the box-shadow is on the inside of the element
+    - Animating the inset shadow on hover looks like the element is filling in from whatever side you specify ([top] and [left] accept negative values to become [bottom] and [right])
+    - Multiple shadows can be stacked
+    - If you're animating multiple shadows, be sure to keep the same number of shadows so the animation is smooth. Otherwise, you'll get something choppy.
+*/
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
 }
 
-* { @include box-sizing(border-box); }
-
-body, html {
-  height: 100%;
-  width: 100%;
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
 }
 
-.card-table {
-  background: burlywood;
-  width: 100%;
-  padding: 1rem 0.5rem 0.5rem 1rem;
-  margin: 0 auto;
-  list-style: none;
-  overflow: hidden;
-  text-align: center;
-  height: 300px
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
 }
 
-.card {
-  width: 200px;
-  height: 125px;
-  border-radius: 5px;
-  background: #fff;
-  display: inline-block;
-  margin: 0 0.5rem 0.5rem 0;
-  border: 1px solid #ddd;
-  @include transform(translateY(-125%));
-  transition: transform .5s cubic-bezier(.25,0,.28,1.43);
+.close:hover,
+.close:focus {
+  box-shadow:
+    inset -3.5em 0 0 0 var(--hover),
+    inset 3.5em 0 0 0 var(--hover);
 }
 
-.card:nth-child(1) {
-  @include transition-delay(0);
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
 }
 
-.card:nth-child(2) {
-  @include transition-delay(.30s);
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
 }
 
-.card:nth-child(3) {
-  @include transition-delay(.45s);
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
 }
 
-.card:nth-child(4) {
-  @include transition-delay(.15s);
-}
+.offset {
+  box-shadow:
+    0.3em 0.3em 0 0 var(--color),
+    inset 0.3em 0.3em 0 0 var(--color);
 
-.load-cards {
-  width: 100%;
-  float: left;
-  padding: 1rem;
-  cursor: pointer;
-  @include no-touchy;
-  &:hover {
-    background: #ddd;
+  &:hover,
+  &:focus {
+    box-shadow:
+      0 0 0 0 var(--hover),
+      inset 6em 3.5em 0 0 var(--hover);
   }
 }
 
-.animated {
-  .card {
-    @include transform(translateY(0));
-    transition: transform .5s cubic-bezier(.25,-1.42,.28,1.43);
-  }
-  .card:nth-child(1) {
-    @include transition-delay(0);
-  }
+$colors: (
+  fill: #a972cb,
+  pulse: #ef6eae,
+  close: #ff7f82,
+  raise: #ffa260,
+  up: #e4cb58,
+  slide: #8fc866,
+  offset: #19bc8b
+);
 
-  .card:nth-child(2) {
-    @include transition-delay(.15s);
-  }
-
-  .card:nth-child(3) {
-    @include transition-delay(.30s);
-  }
-
-  .card:nth-child(4) {
-    @include transition-delay(.45s);
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
   }
 }
 
-/*$t: 1s;
-$d: 0.08em;
-$n: 3;
-$e: cubic-bezier(0.860, 0.000, 0.070, 1.000);
-$front: black;
-$back: lightblue;
-html{
-	background: white;
+button {
+  color: var(--color);
+  transition: 0.25s;
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover);
+    color: #fff;
+  }
 }
 
-.popout{
-	font-family: Futura, sans-serif;
-	font-weight: 900;
-	font-size: 80px;
-	padding: 80px;
 
-	@keyframes ani{
-		0%{
-			transform: translate3d(0,0,0);
-			text-shadow: 0em 0em 0 $back;
-			color: $front;
-		}
-		30%{
-			transform: translate3d(0,0,0);
-			text-shadow: 0em 0em 0 $back;
-			color: $front;
-		}
-		70%{
-			transform: translate3d($d,-$d,0);
-			text-shadow: -$d $d $back;
-			color: $front;
-		}
-		100%{
-			transform: translate3d($d,-$d,0);
-			text-shadow: -$d $d $back;
-			color: $front;
-		}
-	}
-	span{
-		position: relative;
-		display: inline-block;
-		animation: ani $t infinite alternate $e;
-		@for $i from 1 through $n{
-			&:nth-last-child(#{$i}n){ animation-delay: -$t*$i/$n/2;}
-		}
-	}
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
 
-}*/
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}

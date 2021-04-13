@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
 	<meta charset="utf-8">
 
@@ -9,7 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<link rel="stylesheet" href="css/style.css">
-<!--	<link rel="stylesheet" href="css/style-colour.css">-->
+	<link rel="stylesheet" href="css/style-colour.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -144,13 +144,11 @@
 	<hr>
 
 	<section>
-		<div class="square" style="background-color: #FC4445">
-<!--			<div class="content">-->
+		<div class="text-box" style="background-color: #FC4445">
 			<div class="square-outline">
-<!--					<h1>ABOUT</h1>-->
-<!--					<h1>ME</h1>-->
-				</div>
-<!--			</div>-->
+				<h1 class="text-about">ABOUT</h1>
+				<h1 class="text-about">ME</h1>
+			</div>
 		</div>
 	</section>
 
@@ -166,13 +164,14 @@
 
 <!--	<section class="resume">-->
 	<div class="container-resume">
-		<div class="left">
-			<div class="square-outline">
-				<h1 style="margin-top: 5%" class="square-header">Resume</h1>
-			</div>
-		</div>
+<!--		<div class="text-box-resume" style="background-color: transparent; right:40%">-->
+<!--			<div class="square-outline-resume" >-->
+<!--				<h1 class="text-skills" >ABOUT</h1>-->
+<!--			</div>-->
+<!--		</div>-->
 
 		<section class="component">
+			<button class="resume-outline">RESUME</button>
 			<button class="download"><i class="fa fa-download"></i> Download Word</button>
 			<button class="download"><i class="fa fa-download"></i> Download PDF</button>
 			<a href="pages/resume.html">
@@ -183,13 +182,67 @@
 
 	<hr>
 
-	<section>
+<!--	<section>-->
+<!--		<div class="text-box-skills" style="background-color: #FFA500">-->
+<!--			<div class="square-outline-skills">-->
+<!--				<h1 class="text-skills">SKILLS</h1>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
 
-		<div class="square" style="background-color: #FFA500">
-			<div class="content">
-				<div class="square-inner">
-					<h1>SKILLS</h1>
+	<section style="padding-top:5%">
+
+		<div class="skill-bars">
+			<div class="bar">
+				<div class="info">
+					<span>HTML</span>
 				</div>
+				<div class="progress-line html">
+					<span></span>
+				</div>
+			</div>
+			<div class="bar">
+				<div class="info">
+					<span>CSS</span>
+				</div>
+				<div class="progress-line css">
+					<span></span>
+				</div>
+			</div>
+			<div class="bar">
+				<div class="info">
+					<span>jQuery</span>
+				</div>
+				<div class="progress-line jquery">
+					<span></span>
+				</div>
+			</div>
+			<div class="bar">
+				<div class="info">
+					<span>Python</span>
+				</div>
+				<div class="progress-line python">
+					<span></span>
+				</div>
+			</div>
+			<div class="bar">
+				<div class="info">
+					<span>MySQL</span>
+				</div>
+				<div class="progress-line mysql">
+					<span></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="text-box-skills" style="background-color: #FFA500">
+			<div class="square-outline-skills">
+				<h2 class="text-skills">S</h2>
+				<h2 class="text-skills">K</h2>
+				<h2 class="text-skills">I</h2>
+				<h2 class="text-skills">L</h2>
+				<h2 class="text-skills">L</h2>
+				<h2 class="text-skills">S</h2>
 			</div>
 		</div>
 
@@ -235,25 +288,61 @@
 				</div>
 			</div>
 		</div>
-
 	</section>
+	<section style="padding-bottom:5%" ></section>
 
 	<hr>
 
 	<section>
-		<div class="window-container is-visible">
-			<div class="window-controls">
-				<button class="window-controls-btn close-btn"></button>
-				<button class="window-controls-btn minimize-btn"></button>
-				<button class="window-controls-btn expand-btn"></button>
-			</div>
-			<div class="window-content"></div>
+		<div class="buttons">
+			<h1>Simple hover effects with <code>box-shadow</code></h1>
+			<button class="raise">Raise</button>
 		</div>
-		<div class="post-wrap"></div>
-		<div class="post-wrap"></div>
-		<div class="post-wrap"></div>
-		<div class="post-wrap"></div>
+
+
 	</section>
+
+<!--	<div id="para_div">-->
+<!--		<p id="real">My Text</p>-->
+<!--		<p id="refl">My Text</p>-->
+<!--	</div>-->
+
+<!--	<section>-->
+<!--		<div class="window-container is-visible">-->
+<!--			<div class="window-controls">-->
+<!--				<button class="window-controls-btn close-btn"></button>-->
+<!--				<button class="window-controls-btn minimize-btn"></button>-->
+<!--				<button class="window-controls-btn expand-btn"></button>-->
+<!--			</div>-->
+<!--			<div class="window-content"></div>-->
+<!--		</div>-->
+<!--		<div class="post-wrap"></div>-->
+<!--		<div class="post-wrap"></div>-->
+<!--		<div class="post-wrap"></div>-->
+<!--		<div class="post-wrap"></div>-->
+
+<!--	</section>-->
+
+<!--	<div class="container-projects" style="background-color: #48D1CC">-->
+<!--		<div class="box">-->
+<!--			<img src="images/projects/lamp1.png" style="width:100%">-->
+<!--			<span>Lamp Project</span>-->
+<!--		</div>-->
+<!--		<div class="box">-->
+<!--			<img src="images/projects/pi_replace.jpg" style="width:100%">-->
+<!--			<span>Pi Project</span>-->
+<!--		</div>-->
+<!--		<div class="box">-->
+<!--			<img src="images/projects/backpack.jpg" style="width:100%">-->
+<!--			<span>Hover</span>-->
+<!--		</div>-->
+<!--		<div class="box">-->
+<!--			<img src="images/projects/falcon2.png" style="width:100%">-->
+<!--			<span>Millenial falcon</span>-->
+<!--		</div>-->
+<!--	</div>-->
+
+
 
 
 	<section>
@@ -285,6 +374,8 @@
 	<script type="text/javascript" src="js/terminal.js"></script>
 	<script type="text/javascript" src="js/name.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
 </body>
 </html>
 
