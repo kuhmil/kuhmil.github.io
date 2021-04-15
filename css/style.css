@@ -7,6 +7,20 @@
 }
 
 
+.rotate_text {
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-0deg);
+    font-weight:bold;
+    text-align: center;
+    font-size: 600%;
+    color: #FFA500;
+}
+
 .container-projects {
   display: flex;
   width: 100%;
@@ -25,6 +39,10 @@ body {
   margin: 0;
   background-color: white;
   align-items: center;
+}
+
+.space {
+    margin: 5%;
 }
 
 /*Text*/
@@ -590,7 +608,6 @@ section.contact {
   width: 20%;
   padding-bottom: 20%;
   position: relative;
-  background: palevioletred;
 }
 
 .square-outline {
@@ -628,15 +645,93 @@ section.contact {
 }
 
 .square-outline-skills {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   border: 3px solid white;
   position: absolute;
   top: 10%;
   left: 10%;
 }
+/*Projects*/
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.project-card :hover,
+.project-card :focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+.offset {
+  box-shadow:
+    0.3em 0.3em 0 0 var(--color),
+    inset 0.3em 0.3em 0 0 var(--color);
+
+  &:hover,
+  &:focus {
+    box-shadow:
+      0 0 0 0 var(--hover),
+      inset 6em 3.5em 0 0 var(--hover);
+  }
+}
+
+$colors: (
+
+  project-card: #ffa260,
+);
+
+@each $project-card , $color in $colors {
+  .#{$project-card} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+  }
+}
+
+.project-card {
+  color: var(--color);
+  transition: 0.25s;
+
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover);
+    color: #fff;
+  }
+}
+
+
+.project-card {
+  background: none;
+  border: 2px solid;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  height: 300px;
+  width: 300%;
+}
+
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
+
+
 
 /*Gradient*/
+
 .square-gradient-ab{
     cursor: pointer;
     position: relative;
@@ -828,3 +923,4 @@ section.contact {
   margin: 0;
   padding: 3px 5px;;
 }
+
