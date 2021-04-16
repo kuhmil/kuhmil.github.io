@@ -6,6 +6,83 @@
 
 }
 
+.one{
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(35deg, white 50%, #62bcfa 50%);
+  min-height: 500px;
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 28px;
+  color: white;
+  font-weight:bold;
+  text-align: center;
+  font-size: 120px;
+}
+
+/* Animation */
+p {
+  animation: animated-text 2s steps(30,end) 1s 1 normal both;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 472px;}
+}
+
+
+.curtain {
+  width: 100%;
+  height: 100pxh;
+  overflow: hidden;
+}
+
+.left-panel {
+  width: 50%;
+  height: 50%;
+  float: left;
+  z-index: 2;
+  position: relative;
+  background: black;
+  transition: all 1s ease-in;
+}
+.right-panel {
+  width: 50%;
+  height: 50%;
+  float: left;
+  z-index: 2;
+  position: relative;
+  background: white;
+  transition: all 1s ease-in;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: 333;
+  z-index: 1;
+  text-align: center;
+}
+
+.curtain:hover {
+  .left-panel {
+    transform: translateX(-100%);
+  }
+
+  .right-panel {
+    transform: translateX(100%);
+  }
+}
 
 .rotate_text {
     writing-mode: vertical-lr;
@@ -56,11 +133,10 @@ h1 {
   font-weight: bold;
 }
 
-h1.text-about {
-  font-weight:bold;
-  text-align: center;
-  font-size: 56px;
-  color: white;
+
+
+.container-resume {
+    justify-content: center;
 }
 
 
@@ -93,10 +169,11 @@ hr {
 	height:1px;
 	border:none;
 	color:#000;
-	background-color:#000;
-	width:60%;
+	/*background-color:#FFA500;*/
+	border: 2px solid #FFA500;
 	text-align:center;
-	margin: 0 auto;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 /*Sections*/
@@ -104,8 +181,14 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  margin-bottom:10px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+section-resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section.left {
@@ -132,12 +215,7 @@ section.contact {
 section.resume {
     width: 100%;
     height: 20%;
-    margin: auto;
-    padding: 120px;
-    display: flex;
-    justify-content: center;
-    background-color: #62bcfa;
-    flex-wrap: wrap; /* Required to position the posts one below the other on smaller devices */
+    background-color: #62bcfa;/* Required to position the posts one below the other on smaller devices */
 }
 
 /*Images Corners */
@@ -169,23 +247,32 @@ section.resume {
   padding: 0% 4%;
   cursor: pointer;
   font-size: 28px;
-  height: 320%;
-  margin-left:-30%;
-  margin-right:15%;
   font-weight: 1000;
 }
 
 
-.download {
-  background-color: DodgerBlue;
-  border: none;
+.download button {
+  background-color: #0258ff;
   color: white;
-  padding: 12px 24px;
+  padding: 15px 24px;
   cursor: pointer;
+  width: 100%;
+  border: none;
+  margin: 2%;
   font-size: 20px;
-  margin-left:50px;
-  margin-right:50px;
+  position:relative;
 }
+
+.download button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+h1.text-resume {
+  font-weight:bold;
+  font-size: 140px;
+  color: #62bcfa;
+}
+
 
 .download-card {
   background-color: DodgerBlue;
@@ -200,7 +287,7 @@ section.resume {
 
 /*Quotes*/
 .component{
-  width: 1500px;
+  width: 950px;
   margin:0 auto;
   padding: 3rem;
 }
@@ -294,10 +381,7 @@ nav{
 	font-weight: bold;
 }
 
-/*Paper Plane Animation*/
-.box{
-    background-color: #CAFAFE;
-}
+/*RESUME*/
 
 
 /*Card Menu*/
@@ -320,13 +404,10 @@ nav{
 }
 
 .container-resume {
-    max-width: 100%;
-    margin: auto;
-    padding: 30px;
-    display: flex;
+    /*margin: auto;
+    padding: 30px;*/
     justify-content: center;
-    flex-wrap: wrap; /* Required to position the posts one below the other on smaller devices */
-    background-color: #62bcfa;
+
 }
 
 
