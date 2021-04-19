@@ -257,7 +257,7 @@ section.projects {
 .component{
   width: 950px;
   margin:0 auto;
-  padding: 3rem;
+  padding-right: 5em;
 }
 
 .component blockquote.quote {
@@ -296,7 +296,7 @@ section.projects {
 }
 
 .left-panel {
-  width: 40%;
+  width: 50%;
   height: 50%;
   float: left;
   z-index: 2;
@@ -305,7 +305,7 @@ section.projects {
   transition: all 1s ease-in;
 }
 .right-panel {
-  width: 60%;
+  width: 50%;
   height: 50%;
   float: left;
   z-index: 2;
@@ -768,9 +768,8 @@ section.contact {
 
 /*Typewriter animation*/
 #typewriting {
-  white-space: nowrap;
+
   overflow: hidden;
-  font-size: 28px;
   color: white;
   font-weight:bold;
   text-align: center;
