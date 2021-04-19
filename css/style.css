@@ -5,14 +5,56 @@
 	font-family: 'Quicksand', sans-serif;
 }
 
-
-
-#square-outlines {
-  width: 100px;
-  height: 100px;
-  background: red;
+.icons-left {
+    font-size:200%;
+    float:left;
+    margin-left: 2%;
 }
 
+.icons-right {
+    font-size:200%;
+    float:right;
+    margin-right: 2%;
+}
+
+
+.rectangle {
+  height: 300px;
+  width: 300%;
+  color:white;
+  border: 3px solid #48D1CC;
+  border-radius:7px;
+  margin: 2%;
+  transition: 0.3s;
+}
+
+.rectangle:hover {
+  transform: translate(0, -10px);
+}
+
+.rectangles{
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    -webkit-appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+    font-weight: 600;
+    font-size: 14px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 0px;
+    box-shadow: 0 0 0 white, 0 0 0 white;
+}
 
 
 html, body {
@@ -22,7 +64,6 @@ html, body {
 
 body {
   margin: 0;
-  background-color: #fffff0;
   align-items: center;
 }
 
@@ -39,7 +80,6 @@ h1 {
   margin-top:40px;
   margin-bottom:15px;
   font-weight: bold;
-  color: #fffff0;
 }
 
 h1.text-resume {
@@ -48,17 +88,24 @@ h1.text-resume {
   color: #62bcfa;
 }
 
+h1.projects {
+  font-weight:bold;
+  font-size: 600%;
+  color: #48D1CC;
+}
+
 .square-header {
   font-weight:bold;
   font-weight: bold;
   color: white;
 }
 
-h2.text-skills {
+h2.project-title {
   font-weight:bold;
   text-align: center;
   font-size: 33px;
   color: white;
+  margin-top: 12%;
 }
 
 
@@ -84,6 +131,14 @@ hr {
     margin-right: 2%;
 }
 
+hr.contact{
+	height:1px;
+	border:none;
+	border: 3px solid #431c5d;
+	text-align:center;
+    margin: 2%;
+}
+
 /*Sections*/
 section {
   display: flex;
@@ -105,7 +160,6 @@ section.left {
   justify-content: left;
   padding: 30px;
   margin-bottom:10px;
-  background-color: #fffff0;
 }
 
 section.right {
@@ -115,7 +169,6 @@ section.right {
     justify-content: left;
     padding: 10px;
     margin-bottom:10px;
-    background-color: #fffff0;
 }
 
 section.contact {
@@ -129,7 +182,8 @@ section.resume {
 }
 
 section.projects {
-    background-color: #48D1CC;
+    background-color: #202020;
+
 }
 
 /*Images Corners */
@@ -156,7 +210,7 @@ section.projects {
 /*Patterns*/
 .one{
   background-color: #013A6B;
-  background-image: -webkit-linear-gradient(35deg, white 50%, #62bcfa 50%);
+  background-image: -webkit-linear-gradient(35deg, #48D1CC 50%, #62bcfa 50%);
   min-height: 500px;
 }
 
@@ -242,7 +296,7 @@ section.projects {
 }
 
 .left-panel {
-  width: 50%;
+  width: 40%;
   height: 50%;
   float: left;
   z-index: 2;
@@ -251,7 +305,7 @@ section.projects {
   transition: all 1s ease-in;
 }
 .right-panel {
-  width: 50%;
+  width: 60%;
   height: 50%;
   float: left;
   z-index: 2;
@@ -356,7 +410,6 @@ nav{
     max-width: 100%;
     padding-top: 15%;
     padding-bottom: 15%;
-    color: #fffff0;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap; /* Required to position the posts one below the other on smaller devices */
@@ -722,7 +775,6 @@ section.contact {
   font-weight:bold;
   text-align: center;
   font-size: 120px;
-  color: #fffff0;
 }
 
 /* Animation */
