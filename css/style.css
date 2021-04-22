@@ -238,6 +238,7 @@ section.projects {
   position:relative;
 }
 
+
 .download button:not(:last-child) {
   border-bottom: none; /* Prevent double borders */
 }

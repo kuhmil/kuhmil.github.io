@@ -60,7 +60,7 @@
 							Checkout the website to find out more!
 						</p>
 					</div>
-					<a class="left" href="#">Read More</a>
+					<a class="left" href="#about-me-link">Read More</a>
 				</div>
 			</div>
 		</div>
@@ -75,13 +75,15 @@
 				<div class="post-back">
 					<div class="post-excerpt">
 						<p>
-							<button class="download-card"> Download Word</button>
-							<button class="download-card"> Download PDF</button>
-							<button class="download-card"><i class="fa fa-link"></i> Resume</button>
+							<div class="download" >
+								<button><i class="fa fa-download"></i>   Download Word</button>
+								<button><i class="fa fa-download"></i>   Download PDF</button>
+								<button><i class="fa fa-external-link"></i>  Resume</button>
+							</div>
 						</p>
 
 					</div>
-					<a href="#">Read More</a>
+					<a href="#resume-link">Read More</a>
 				</div>
 			</div>
 		</div>
@@ -94,14 +96,9 @@
 				</div>
 				<div class="post-back">
 					<div class="post-except">
-						<p>
-							Resume Link
-						</p>
-						<p>
-							Download button
-						</p>
+						<p><img src="images/skills.png" width="100%" alt="skills-icon"></p>
 					</div>
-					<a href="#">Read More</a>
+					<a href="#skills-link">Read More</a>
 				</div>
 			</div>
 		</div>
@@ -114,14 +111,19 @@
 				</div>
 				<div class="post-back">
 					<div class="post-except">
-						<p>
-							My favorite types of projects are ones that involve multiple components.
-							The combination of software programming, hardware engineering and craftmanship sllows be to have well rounded skills.
-							This allows me to focus on different parts of a project when I'm discouraged by another.
-							Click on the buttons below to checkout on what I've worked on!
-						</p>
+						<p>Check out my projects!</p>
+						<p><img src="images/projects/millenium.png" width="50%" style="float: left" alt="skills-icon"></p>
+						<p><img src="images/projects/arduino.png" width="50%" style="float: left" alt="skills-icon"></p>
+						<p><img src="images/projects/led.png" width="50%"  style="float: right"  alt="skills-icon"></p>
+						<p><img src="images/projects/pi_three.png" width="50%" style="float: right;margin-top: 10%" alt="skills-icon"></p>
+<!--						<p>-->
+<!--							My favorite types of projects are ones that involve multiple components.-->
+<!--							The combination of software programming, hardware engineering and craftmanship sllows be to have well rounded skills.-->
+<!--							This allows me to focus on different parts of a project when I'm discouraged by another.-->
+<!--							Click on the buttons below to checkout on what I've worked on!-->
+<!--						</p>-->
 					</div>
-					<a href="#">Read More</a>
+					<a href="#projects-link">Read More</a>
 				</div>
 			</div>
 		</div>
@@ -149,11 +151,11 @@
 
 	</div>
 
-	<section style="border: 3px solid #FC4445; margin-top: 2%">
+	<section style="border: 3px solid #FC4445; margin-top: 2%" id="about-me-link">
 	<div class="curtain" style="margin-top: 2%; margin-left: 2%; margin-bottom: 2%">
-		<div class="left-panel" >
+		<div class="left-panel">
 			<p id="typewriting" style="margin-left: 22%; margin-top: 22%">ABOUT</p>
-			<p id="typewriting" style="margin-left: 33%; margin-bottom: 22%">ME.</p>
+			<p id="typewriting" class="show-on-scroll" style="margin-left: 33%; margin-bottom: 22%">ME.</p>
 		</div>
 
 
@@ -186,14 +188,14 @@
 	</div>
 	</section>
 
-	<section class="section-resume">
+	<section class="section-resume" id="resume-link">
 		<div class="container-resume" style="margin-right: 7%">
 			<div class="download" >
 
-				<button>Download Word</button>
-				<button>Download PDF</button>
+				<button><i class="fa fa-download"></i>   Download Word</button>
+				<button><i class="fa fa-download"></i>   Download PDF</button>
 				<a href="pages/resume.html">
-					<button>Resume</button>
+					<button><i class="fa fa-external-link"></i>  Resume</button>
 				</a>
 			</div>
 			<h1 class="text-resume">RESUME</h1>
@@ -207,7 +209,7 @@
 	<hr>
 
 
-	<section style="border: 3px solid white; margin-bottom: 2%">
+	<section style="border: 3px solid white; margin-bottom: 2%" id="skills-link">
 
 		<div class="space">
 			<div class="skill-bars">
@@ -300,7 +302,9 @@
 			<div class='rotate_text'>SKILLS</div>
 		</div>
 	</section>
-	<section class="projects">
+
+
+	<section class="projects" id="projects-link">
 		<h1 class="projects">P R O J E C T S</h1>
 	</section>
 
@@ -378,6 +382,7 @@
 	<script type="text/javascript" src="js/terminal.js"></script>
 	<script type="text/javascript" src="js/name.js"></script>
 	<script type="text/javascript" src="js/rainbow.js"></script>
+	<script type="text/javascript" src="js/scrolling.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
