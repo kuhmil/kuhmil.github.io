@@ -5,6 +5,7 @@
 	font-family: 'Quicksand', sans-serif;
 }
 
+
 a {
   color: white;
 }
@@ -512,6 +513,11 @@ nav{
     font-weight: bold;
     border-radius: 5px;
     }
+
+/*About Me Card*/
+.about-me-card {
+  color: #FC4445;
+}
 
 /*Contact Info Footer and Contact card*/
 .name-contact {

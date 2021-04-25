@@ -43,7 +43,7 @@
 		</svg>
 	</div>
 
-	<div class="container" style="background-color: black">
+	<div class="container" style="background-color: black" id="cards-link">
 		<div class="post-wrap"> <!-- The parent element -->
 			<div class="post"> <!-- Child element that flips -->
 				<div class="post-front" style="background-color: #FC4445">
@@ -54,10 +54,15 @@
 				</div>
 				<div class="post-back">
 					<div class="post-except">
-						<p>
-							Camille Owens is not used to writing in the third person but wants you to know a little bit about herself.
-							She loves programming, travelling, cooking and working on projects.
-							Checkout the website to find out more!
+						<p class="contact-card">
+							<span class="about-me-card">Hi, my name is</span>
+						</p>
+						<p class="contact-card">
+							<span class="about-me-card" style="font-weight:bold; font-size: 23px">Camille Owens, a Colorado-based Devops engineer.</span>
+						</p>
+						<p class="contact-card">
+							Checkout the website to see what I’ve built, worked on, skills I’ve acquired and just a little about who I am.
+
 						</p>
 					</div>
 					<a class="left" href="#about-me-link">Read More</a>
@@ -157,33 +162,33 @@
 	<section style="border: 3px solid #FC4445; margin-top: 2%" id="about-me-link">
 	<div class="curtain" style="margin-top: 2%; margin-left: 2%; margin-bottom: 2%">
 		<div class="left-panel">
+<!--			<p id="typewriting">ABOUT ME.</p>-->
 			<p id="typewriting" style="margin-left: 22%; margin-top: 22%">ABOUT</p>
 			<p id="typewriting" class="show-on-scroll" style="margin-left: 33%; margin-bottom: 22%">ME.</p>
+<!--			<p id="typewriting" class="show-on-scroll" style="margin-left: 45%">ME.</p>-->
 		</div>
 
 
 		<div class="right-panel">
 			<section class="component">
 				<blockquote class="callout quote DE">
-					Es ist schön, Sie kennenzulernen, Dr. Banner. Ihre Arbeit an Anti-Elektronen-Kollisionen
-					ist beispiellos. Und ich bin ein großer Fan davon, wie Sie Ihre Kontrolle verlieren
-					und sich in ein riesiges grünes Wutmonster verwandeln.
-					My favorite types of projects are ones that involve multiple components.
-					The combination of software programming, hardware engineering and craftmanship sllows be to have well rounded skills.
-					This allows me to focus on different parts of a project when I'm discouraged by another.
-					Click on the buttons below to checkout on what I've worked on!
-					My favorite types of projects are ones that involve multiple components.
-					The combination of software programming, hardware engineering and craftmanship sllows be to have well rounded skills.
-					This allows me to focus on different parts of a project when I'm discouraged by another.
-					Click on the buttons below to checkout on what I've worked on!
-					My favorite types of projects are ones that involve multiple components.
-					The combination of software programming, hardware engineering and craftmanship sllows be to have well rounded skills.
-					This allows me to focus on different parts of a project when I'm discouraged by another.
-					Click on the buttons below to checkout on what I've worked on!
-					My favorite types of projects are ones that involve multiple components.
-					The combination of software programming, hardware engineering and craftmanship sllows be to have well rounded skills.
-					<a href="pages/about.html">more</a>
-
+					<p>
+						As a child I moved from the United States to England, then to France and back to the United States.
+					This it has given me the opportunity from a young age to experience cultures other than my own.
+					This has provided me with a move open minded approach to everyone I meet.
+					</p>
+					<p>
+						It also has encouraged me to be curious about my surroundings close and far.
+						It also allows me to not fear the unknown and to commit to my journey whether it's not the greatest at times.
+						My favorite types of projects are ones that involve multiple components.
+						The combination of software programming, hardware engineering and craftsmanship allows be to have well rounded skills.
+						This allows me to focus on different parts of a project when I'm discouraged by another.
+						The pandemic taught be a lot blah blah blah 14ers
+					</p>
+					<p>
+						Checkout the Photo gallery from tresvela na projects
+					</p>
+					<a href="pages/about.html" style="color:#FC4445">Photo Gallery</a>
 				</blockquote>
 			</section>
 
@@ -193,19 +198,18 @@
 
 	<section class="section-resume" id="resume-link">
 		<div class="container-resume" style="margin-right: 7%">
-			<div class="download" >
+			<div class="download" style="float:left">
 
 				<button><i class="fa fa-download"></i>   Download Word</button>
 				<button><i class="fa fa-download"></i>   Download PDF</button>
 				<a href="pages/resume.html">
 					<button><i class="fa fa-external-link"></i>  Resume</button>
 				</a>
+
 			</div>
 			<h1 class="text-resume">RESUME</h1>
 		</div>
 		<img src="images/cool-background_3.svg" style="overflow: hidden">
-
-
 	</section>
 
 
@@ -411,6 +415,7 @@
 
 	</section>
 	<hr class="contact">
+	<script type="text/javascript" src="js/arrow.js"></script>
 	<script type="text/javascript" src="js/terminal.js"></script>
 	<script type="text/javascript" src="js/name.js"></script>
 	<script type="text/javascript" src="js/rainbow.js"></script>
