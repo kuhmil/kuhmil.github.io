@@ -142,3 +142,10 @@ nav{
   top: 0px;
   transform: rotate(315deg);
 }
+
+/*Sections*/
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
