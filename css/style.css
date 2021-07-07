@@ -10,6 +10,8 @@ a {
   color: white;
 }
 
+
+
 .icons-left {
     font-size:200%;
     float:left;
@@ -230,6 +232,17 @@ section.projects {
   font-weight: 1000;
 }
 
+.download-outline {
+  background-color: #0258ff;
+  color: white;
+  padding: 10px 70px;
+  cursor: pointer;
+  border: none;
+  margin: 2%;
+  font-size: 20px;
+  position:relative;
+  align-items: center;
+}
 
 .download button {
   background-color: #0258ff;
@@ -239,6 +252,17 @@ section.projects {
   width: 100%;
   border: none;
   margin: 2%;
+  font-size: 20px;
+  position:relative;
+}
+
+.download-two button {
+  background-color: #0258ff;
+  color: white;
+  padding: 15px 24px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
   font-size: 20px;
   position:relative;
 }
